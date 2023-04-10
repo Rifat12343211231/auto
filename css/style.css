@@ -39,6 +39,7 @@ img {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    position: relative;
 }
 
 .container {
@@ -49,7 +50,11 @@ img {
 
 .header {
     padding-top: 16px;
-    background-color: blueviolet;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .header__container {
@@ -100,32 +105,104 @@ img {
 
 .addres__pic {}
 
-.address {}
+.address {
+    display: flex;
+    align-items: center;
+    column-gap: 52px;
+    font-style: normal;
+}
 
-.tel {}
+.location {
+    color: #FFFFFF;
+}
+
+.location::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: aqua;
+    background: url(../img/icons/location.svg)bottom center/contain no-repeat;
+    margin: right 2px;
+}
+
+
+.tel {
+    color: #FFFFFF;
+}
 
 .main {}
 
-.hero {}
+.hero {
+    height: 100vh;
+    min-height: 650px;
+    background: url(../img/bg/Кузовной\ ремонт\ 2\ 1.png) no-repeat center/cover;
+    padding-top: 272px;
+}
 
 .hero__container {}
 
 .hero__main {}
 
-.title {}
+.title {
+    color: #FFFFFF;
+}
 
-.subtitle {}
+.subtitle {
+    padding-top: 17px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
 
 .hero__btns {}
 
-.btn {}
+.btn {
+    width: 170px;
+    height: 44px;
+    background: none;
+    border: 2px #FFFFFF solid;
+    border-radius: 2%;
+    color: #FFFFFF;
+}
 
-.hero__call-to-action {}
+.btn__hero {
+    width: 304px;
+    height: 44px;
+    background: none;
+    border: 2px #FFFFFF solid;
+    border-radius: 2%;
+    color: #FFFFFF;
+}
 
-.advantages {}
+.hero__call-to-action {
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 164px;
+}
 
-.advantage {}
 
-.advantage__pic {}
+.advantages {
+    display: flex;
+    column-gap: 127px;
+}
 
-.advantage__text {}
+.advantage {
+    border: 2px solid white;
+    width: 276px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.advantage__pic {
+    width: 30px;
+    height: 30px;
+}
+
+.advantage__text {
+    color: #FFFFFF;
+    text-decoration: center;
+}
