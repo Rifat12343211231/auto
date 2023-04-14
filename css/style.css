@@ -138,11 +138,15 @@ img {
     min-height: 650px;
     background: url(../img/bg/Кузовной\ ремонт\ 2\ 1.png) no-repeat center/cover;
     padding-top: 272px;
+    display: flex;
+    padding-bottom: 50px;
 }
 
 .hero__container {}
 
-.hero__main {}
+.hero__main {
+    flex: 1;
+}
 
 .title {
     color: #FFFFFF;
@@ -163,6 +167,7 @@ img {
     border: 2px #FFFFFF solid;
     border-radius: 2%;
     color: #FFFFFF;
+    margin-right: 20px;
 }
 
 .btn__hero {
@@ -180,6 +185,9 @@ img {
     padding-bottom: 164px;
 }
 
+.hero__call-to-action span {
+    color: #ED7173;
+}
 
 .advantages {
     display: flex;
@@ -206,3 +214,34 @@ img {
     color: #FFFFFF;
     text-decoration: center;
 }
+
+.info {}
+
+.header__info {}
+
+.header__text {}
+
+.title__text {
+    color: #E7E7E7;
+    text-align: center;
+    padding-top: 62px;
+    padding-bottom: 10px;
+}
+
+.header__subtext {}
+
+.subtitle__text {
+    text-align: center;
+}
+
+.header__blocks {}
+
+.blocks__list {}
+
+.blocks__item {}
+
+.number__blocks {
+    color: #E7E7E7;
+}
+
+.text__blocks {}
