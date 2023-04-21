@@ -128,64 +128,6 @@ img {
     color: #FFFFFF;
 }
 
-@media (max-width: 960px) {
-    .container {
-        max-width: 898px;
-    }
-
-    .logo {
-        max-width: 181px;
-    }
-
-    .nav__list {
-        display: flex;
-        column-gap: 36px;
-    }
-
-    .nav__item {
-        border-bottom: 2px solid transparent;
-    }
-
-    .nav__item.active {
-        border-bottom-color: #FFFFFF;
-    }
-
-    .nav__link {
-        font-size: 16px;
-        line-height: 1.13;
-        color: #FFFFFF;
-        transition: opacity 0.3s;
-    }
-
-    .nav__link:hover {
-        opacity: 0.8;
-    }
-
-    .address {
-        display: flex;
-        align-items: center;
-        column-gap: 52px;
-        font-style: normal;
-    }
-
-    .location {
-        color: #FFFFFF;
-    }
-
-    .location::before {
-        content: "";
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        background: url(../img/icons/location.svg) bottom center/contain no-repeat;
-        margin-right: 2px;
-    }
-
-    .tel {
-        color: #FFFFFF;
-    }
-}
-
 .main {
     color: #FFFFFF;
 }
@@ -206,6 +148,7 @@ img {
 
 .hero__main {
     flex: 1;
+    padding-left: 96px;
 }
 
 .title {
@@ -277,3 +220,56 @@ img {
 .advantage__icon {}
 
 .advantage__text {}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 898px;
+    }
+
+    .logo {
+        max-width: 181px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 210px;
+    }
+
+    .hero__main {
+        padding-left: 73px;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .hero__subtitle {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .nav {
+        display: none;
+    }
+
+    .logo {
+        max-width: 142px;
+    }
+
+    .container {
+        max-width: 726px;
+    }
+
+    .hero {
+        padding-top: 170px;
+    }
+
+    .hero__main {
+        padding-left: 60px;
+    }
+}
