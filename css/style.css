@@ -161,9 +161,7 @@ img {
     width: 83%;
 }
 
-.main {
-    color: #FFFFFF;
-}
+.main {}
 
 .hero {
     height: 100vh;
@@ -177,11 +175,12 @@ img {
 .hero__container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .hero__main {
     flex: 1;
-    padding-left: 96px;
+    padding-left: 8.5%;
 }
 
 .title {
@@ -190,6 +189,7 @@ img {
     font-weight: 400;
     font-size: 48px;
     line-height: 1.17;
+    color: #D9D9D9;
 }
 
 .hero__title {
@@ -203,6 +203,7 @@ img {
     font-size: 28px;
     line-height: 1.18;
     margin-bottom: 50px;
+    color: #D9D9D9;
 }
 
 .hero__btns {
@@ -221,6 +222,10 @@ img {
     text-align: center;
     color: #FFFFFF;
     padding: 12px 17px;
+}
+
+.hero__call-to-action {
+    color: #D9D9D9;
 }
 
 .hero__call-to-action span {
@@ -258,9 +263,23 @@ img {
 
 .advantage__text {}
 
+.about {}
+
+.container__about {}
+
+.title__about {}
+
+.subtitle__about {}
+
+.about__list {}
+
+.about__item {}
+
+.about__text {}
+
 @media (max-width: 960px) {
     .container {
-        max-width: 898px;
+        max-width: 92.5%;
     }
 
     .logo {
@@ -292,7 +311,7 @@ img {
 @media (max-width: 768px) {
 
     .container {
-        max-width: 320px;
+        max-width: 93.1%;
     }
 
     .header {
@@ -360,8 +379,51 @@ img {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
+    .container {
+        max-width: 90.6%;
+    }
 
+    .title {
+        font-size: 25px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+    }
+
+    .hero__btns {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+
+    .advantages {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .advantage {
+        flex: 0 1 56px;
+        text-align: initial;
+        flex-direction: row;
+        display: flex;
+        background: #FFFFFF;
+    }
+
+    .advantage__icon {
+        margin-bottom: 0px;
+    }
+
+    .advantage__icon path {
+        fill: black;
+    }
+
+    .advantage__text {
+        color: #000000;
+    }
+}
+
+@media (max-width: 320px) {
     .logo {
         max-width: 81px;
         height: 30px;
@@ -432,13 +494,10 @@ img {
         padding: 10px 14px;
     }
 
-
     .advantages {
         flex-direction: column;
         row-gap: 10px;
-
     }
-
 
     .advantage {
         border-radius: 4px;
@@ -451,14 +510,20 @@ img {
         display: flex;
     }
 
+    .hero__call-to-action {
+        padding-bottom: 59px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
     .advantage__icon {}
 
     .advantage__text {
         color: #000000;
-        text-align: center;
+        padding-left: 28px;
     }
 
-    path {
+    .advantage__icon path {
         fill: black;
     }
 }
