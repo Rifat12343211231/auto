@@ -319,9 +319,16 @@ img {
     position: relative;
 }
 
-.info {}
+.info {
+    height: 519px;
+    background: url(../img/icons/Mask\ group\ \(11\).png);
+    margin-top: 44px;
+}
 
-.container__info {}
+.container__info {
+    height: 519px;
+    padding-top: 62px;
+}
 
 .info__title {
     font-family: 'Roboto';
@@ -341,18 +348,45 @@ img {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
-
+    margin-top: 10px;
 }
 
-.info__list {}
+.info__list {
+    display: flex;
+    column-gap: 16px;
+}
 
-.info__item {}
+.info__item {
+    width: 211px;
+    height: 211px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
 
-.info__img {}
+.info__img {
+    height: 35px;
+    width: 35px;
+}
 
-.info__text {}
+.info__text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #252525;
+}
 
-.services {}
+.services {
+    margin-top: 62px;
+}
 
 .container__service {}
 
@@ -399,7 +433,16 @@ img {
 
 .service__text {}
 
-
+.btn__service {
+    color: #000000;
+    background: none;
+    border: 2px solid  #D4D4D4;
+    border-radius: 4px;
+    font-family: 'Arial';
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: center;
+}
 
 @media (max-width: 960px) {
     .container {
