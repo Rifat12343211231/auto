@@ -267,15 +267,139 @@ img {
 
 .container__about {}
 
-.title__about {}
+.section__title {
+    color: #E7E7E7;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 63px;
+    text-align: center;
+    padding-top: 62px;
+}
 
-.subtitle__about {}
+.section__subtitle {
+    text-align: center;
+}
 
-.about__list {}
+.about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: count;
+    row-gap: 80px;
+}
 
-.about__item {}
+.about__item {
+    width: 48%;
+    position: relative;
+    color: #252525;
+    padding-top: 70px;
+    padding-left: 30px;
 
-.about__text {}
+}
+
+.about__item::before {
+    content: "01";
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    text-align: center;
+    color: #E7E7E7;
+    counter-increment: count;
+    content: "0" counter(count);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about__text {
+    margin: 0;
+    z-index: 10;
+    position: relative;
+}
+
+.info {}
+
+.container__info {}
+
+.info__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info__subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.info__list {}
+
+.info__item {}
+
+.info__img {}
+
+.info__text {}
+
+.services {}
+
+.container__service {}
+
+.service__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 63px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.service__subtitle {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #252525;
+}
+
+.service {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service__item {
+    flex: 0 1 calc((100% - 60px)/ 4);
+}
+
+.service__link {
+    display: block;
+}
+
+.service__img-wrap {}
+
+.service__img {}
+
+.service__item-text {}
+
+.service__text {}
+
+
 
 @media (max-width: 960px) {
     .container {
