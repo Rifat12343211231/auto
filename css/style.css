@@ -558,6 +558,125 @@ img {
     opacity: 0;
 }
 
+.advertising {
+    height: 503px;
+    background: url(../img/bg/Mask\ group\ \(17\).png) no-repeat center/cover;
+    }
+
+.advertising::before {
+    background-color: rgba(0, 0, 0, 0.541);
+    opacity: 0.6;
+}
+
+    .container {
+    }
+
+    .container__advertising {
+    }
+    .advertising__text {
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    padding-top: 80px;
+    color: #FFFFFF;
+    
+    }
+ .advertising__block {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 62px;
+    }
+    .advertising__file {
+    }
+    
+    .text__file {
+        font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+    }
+    
+    .btn__file {
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        background-color: black;
+        width: 170px;
+        height: 44px;
+    }
+    
+    .advertising__call {  
+    }
+    .field__advertising {
+    }
+    .field {
+        width: 360px;
+        height: 44px;
+    }
+    
+    .field__one {
+        margin-bottom: 20px;
+    } 
+    
+    .btn__call {
+        border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    width: 360px;
+        height: 44px;
+      color: #FFFFFF;
+      background: none;
+      margin-top: 20px ;
+    }
+    
+    .map {
+        background: url(../img/bg/Карта\ \(1\).png) no-repeat center/cover;
+        height: 224px;
+    }
+    
+.footer {
+    
+    background-color: #404040;
+}
+
+    .container {
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .logo__footer {
+    }
+    .logo__pic-footer {
+    }
+    .addres__footer {
+    }
+    .address__footer {
+    }
+    .location__footer {
+        color: #FFFFFF;
+    }
+    .requisites {
+        display: flex;
+        row-gap: 20px;
+    }
+    .requisites__text {
+        color: #FFFFFF;
+    }
+    .requisites__footer {
+        color: #FFFFFF;
+    }
+    .addres__footer-tel {
+        color: #FFFFFF;
+    }
+    .address__footer-tel {
+        color: #FFFFFF;
+    }
 @media (max-width: 960px) {
     .container {
         max-width: 92.5%;
@@ -685,6 +804,132 @@ img {
         margin-top: 40px;
         margin-left: 39%;
     }
+
+    .reviews {
+        background: url(../img/bg/Mask\ group\ \(1\).png) no-repeat center/cover;
+    }
+    
+    .review__title {
+        font-size: 54px;
+line-height: 63px;
+    }
+    
+    .review__subtitle {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .review__block {
+        column-gap: 18px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    
+    .review__pic {
+        margin-bottom: 60px;
+        width: 400px;
+height: 120px;
+    }
+    
+    .examples {
+        padding-top: 62px;
+        padding-bottom: 90px;
+    }
+    
+    .container__example {}
+    
+    
+    .example__item {
+        flex: 0 1 calc((100% - 16px * 3) / 4);
+    }
+    
+
+    
+    .example__title {
+        font-size: 54px;
+line-height: 63px;
+    }
+    
+    .advertising {
+        height: 503px;
+        background: url(../img/bg/Mask\ group\ \(17\).png) no-repeat center/cover;
+        }
+    
+    .advertising::before {
+        background-color: rgba(0, 0, 0, 0.541);
+        opacity: 0.6;
+    }
+    
+        .container {
+        }
+    
+        .container__advertising {
+        }
+        .advertising__text {
+            font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        padding-top: 80px;
+        color: #FFFFFF;
+        
+        }
+     .advertising__block {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 62px;
+        }
+        .advertising__file {
+        }
+        
+        .text__file {
+            font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+        }
+        
+        .btn__file {
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            background-color: black;
+            width: 170px;
+            height: 44px;
+        }
+        
+        .advertising__call {  
+        }
+        .field__advertising {
+        }
+        .field {
+            width: 360px;
+            height: 44px;
+        }
+        
+        .field__one {
+            margin-bottom: 20px;
+        } 
+        
+        .btn__call {
+            border: 2px solid #FFFFFF;
+        border-radius: 4px;
+        width: 360px;
+            height: 44px;
+          color: #FFFFFF;
+          background: none;
+          margin-top: 20px ;
+        }
+        
+        .map {
+            background: url(../img/bg/Карта\ \(1\).png) no-repeat center/cover;
+            height: 224px;
+        }
+        
 }
 
 @media (max-width: 768px) {
